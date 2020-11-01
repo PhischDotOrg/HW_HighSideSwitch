@@ -1,0 +1,140 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 5FA11782
+P 2350 1450
+F 0 "Q?" V 2692 1450 50  0000 C CNN
+F 1 "IRF9530" V 2601 1450 50  0000 C CNN
+F 2 "" H 2550 1550 50  0001 C CNN
+F 3 "~" H 2350 1450 50  0001 C CNN
+	1    2350 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 1350 3350 1350
+Connection ~ 2850 1350
+Wire Wire Line
+	2850 850  2850 1350
+Wire Wire Line
+	2500 850  2850 850 
+Wire Wire Line
+	1850 850  1850 1350
+Wire Wire Line
+	2200 850  1850 850 
+NoConn ~ 1550 2450
+Wire Wire Line
+	1950 2450 2050 2450
+Wire Wire Line
+	1650 2450 1550 2450
+$Comp
+L Device:R R?
+U 1 1 5FA0658F
+P 1800 2450
+F 0 "R?" V 1593 2450 50  0000 C CNN
+F 1 "22R" V 1684 2450 50  0000 C CNN
+F 2 "" V 1730 2450 50  0001 C CNN
+F 3 "~" H 1800 2450 50  0001 C CNN
+	1    1800 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA06302
+P 2350 2850
+F 0 "#PWR?" H 2350 2600 50  0001 C CNN
+F 1 "GND" H 2355 2677 50  0000 C CNN
+F 2 "" H 2350 2850 50  0001 C CNN
+F 3 "" H 2350 2850 50  0001 C CNN
+	1    2350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2650 2350 2850
+Wire Wire Line
+	2350 1650 2350 2150
+Wire Wire Line
+	2350 2150 2350 2250
+Connection ~ 2350 2150
+Wire Wire Line
+	1850 2150 1850 2050
+Wire Wire Line
+	2350 2150 1850 2150
+Wire Wire Line
+	1850 1350 1850 1750
+$Comp
+L Device:R R?
+U 1 1 5F9FE86D
+P 1850 1900
+F 0 "R?" H 1920 1946 50  0000 L CNN
+F 1 "10K" H 1920 1855 50  0000 L CNN
+F 2 "" V 1780 1900 50  0001 C CNN
+F 3 "~" H 1850 1900 50  0001 C CNN
+	1    1850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1350 2150 1350
+Connection ~ 1850 1350
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5F9F893F
+P 2250 2450
+F 0 "Q?" H 2454 2496 50  0000 L CNN
+F 1 "BS170" H 2454 2405 50  0000 L CNN
+F 2 "" H 2450 2550 50  0001 C CNN
+F 3 "~" H 2250 2450 50  0001 C CNN
+	1    2250 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1350 2850 1350
+Wire Wire Line
+	1250 1350 1850 1350
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5F9F3267
+P 3550 1350
+F 0 "J?" H 3630 1392 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 3630 1301 50  0000 L CNN
+F 2 "" H 3550 1350 50  0001 C CNN
+F 3 "~" H 3550 1350 50  0001 C CNN
+	1    3550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5F9F16B2
+P 1050 1350
+F 0 "J?" H 968 1125 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 968 1216 50  0000 C CNN
+F 2 "" H 1050 1350 50  0001 C CNN
+F 3 "~" H 1050 1350 50  0001 C CNN
+	1    1050 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5FA15DAA
+P 2350 850
+F 0 "D?" H 2350 1067 50  0000 C CNN
+F 1 "1N4148" H 2350 976 50  0000 C CNN
+F 2 "" H 2350 850 50  0001 C CNN
+F 3 "~" H 2350 850 50  0001 C CNN
+	1    2350 850 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
